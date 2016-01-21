@@ -50,6 +50,11 @@ $result = 'не было установленно';
 if ($dateType == 'int') {
     $result = (int) $userString;
 }
+if ($dateType == 'bool') {$result = (bool) $userString; } 
+if ($dateType == 'float') {$result = (float) $userString; }
+if ($dateType == 'string') {$result = (string) $userString; }
+else { $result = 'Желаемый тип данных указан не корректно' $userString; }
+ 
 
 
 
